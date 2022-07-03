@@ -29,7 +29,6 @@ height: auto;
     margin-bottom: 32px;
     width: 288px;
 
-
 }
 .Info__box__num {
     font-size: 48px;
@@ -67,6 +66,13 @@ height: auto;
 }
 
 @media only screen and (min-width: 1088px) {
+    .Info__title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    width:343px;
+    }
     .Info__container {
         display: flex;
         flex-direction: row;

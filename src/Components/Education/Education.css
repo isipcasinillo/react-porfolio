@@ -1,0 +1,81 @@
+/* font-family: 'Yantramanav', sans-serif; */
+
+
+.Education__wrapper {
+    background-color: #3E4869;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.Education__container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+
+}
+
+.Education__certification {
+    width: 194px;
+    font-size: 32px;
+    color: #FF895D;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    margin-top: 64px;
+}
+.Education__school {
+    font-size: 24px;
+    font-family: 'Yantramanav', sans-serif;
+}
+.Education__type {
+    font-size: 24px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 32px;
+}
+
+.dates {
+    display: none;
+    font-size: 24px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+@media only screen and (min-width: 1088px) {
+    .Education__container {
+        width: 1088px;
+        margin-bottom: 160px;
+    }
+    .Education__left__container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .dates {
+        display: block;
+        min-width: 343px;
+    }
+}
+
+@media only screen and (min-width: 678px)   and (max-width: 1088px){
+    .Education__container {
+        margin-bottom: 160px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .dates {
+        display: block;
+        min-width: 200px;
+    }
+}
