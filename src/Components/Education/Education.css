@@ -1,27 +1,27 @@
 /* font-family: 'Yantramanav', sans-serif; */
 
-
-.Education__wrapper {
-    background-color: #3E4869;
+.bg {
+  background-color: #3E4869;
     position: absolute;
     left: 0;
     z-index: -1;
     width: 100%;
+    height: 728px;
 }
 .Education__container {
-    width: 80%;
+    display: block;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 64px;
 
 }
-
 .Education__certification {
     width: 194px;
     font-size: 32px;
     color: #FF895D;
     font-family: 'Yantramanav', sans-serif;
     font-weight: bold;
-    margin-top: 64px;
+    padding-top: 64px;
 }
 .Education__school {
     font-size: 24px;
@@ -36,9 +36,11 @@
     display: flex;
     flex-direction: row;
     color: white;
-    margin-top: 32px;
+    margin-top: 48px;
 }
-
+.creds {
+    width: 288px;
+}
 .dates {
     display: none;
     font-size: 24px;
@@ -49,7 +51,7 @@
 @media only screen and (min-width: 1088px) {
     .Education__container {
         width: 1088px;
-        margin-bottom: 160px;
+        margin-bottom: 64px;
     }
     .Education__left__container {
         display: flex;
@@ -64,18 +66,31 @@
         display: block;
         min-width: 343px;
     }
-}
+    .creds {
+    width: auto;
 
-@media only screen and (min-width: 678px)   and (max-width: 1088px){
-    .Education__container {
-        margin-bottom: 160px;
+}
+.bg {
+    height:  573px;
+}
+}
+@media only screen and (min-width: 789px) and (max-width: 1088) {
+    .dates {
+        display: block;
     }
+}
+@media only screen and (min-width: 678px)   and (max-width: 788px){
+
     .container {
         display: flex;
         flex-direction: row;
     }
     .dates {
-        display: block;
-        min-width: 200px;
+        display: none;
     }
 }
+
+
+
+
+

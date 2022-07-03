@@ -1,0 +1,97 @@
+.Technology_wrapper {
+    background-color: rgba(255, 255, 255, 0.214);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Technology__title {
+    display: flex;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: #3E4869;
+}
+.Technology__container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 343px;
+    grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px ;
+     gap: 30px 0px;
+     grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine";
+    margin-bottom: 64px;
+}
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+
+.Technology__card {
+    width: 343px;
+    height:160px;
+    box-shadow: 0 0 20px #6a6b772b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Tech_svg {
+    height: 80px;
+    width: 80px;
+    margin-right: 16px;
+    margin-left: 90px;
+}
+
+
+@media only screen and (min-width: 1088px) {
+.Technology__container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 343px 343px 343px;
+    margin-bottom: 128px;
+    grid-template-rows: 160px 160px 160px;
+    gap: 30px 30px;
+    grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+}
+}
+@media only screen and (min-width: 800px) and (max-width: 1087px){
+
+
+.Technology__container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 343px 343px;
+  grid-template-rows: 160px 160px 160px 160px 160px;
+  gap: 30px 30px;
+  grid-template-areas:
+    "one two"
+    "three four"
+    "five six"
+    "seven eight"
+    "nine .";
+}
+}
+@media only screen and (min-width: 678px)   and (max-width: 1088px){
+
+}

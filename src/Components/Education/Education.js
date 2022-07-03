@@ -4,6 +4,9 @@ function Education() {
     return (
         <>
             <div className='Education__wrapper'>
+                <div className='bg'>
+
+                </div>
                 <div className='Education__container'>
                     <div className='Education__certification '>
                         Education & Certification
@@ -17,7 +20,8 @@ function Education() {
                                 Unversity of Texas at Arlington
                             </div>
                             <div className='Education__type'>
-                                Pursuing a Bachelor of Science in Software Engineer
+                                Pursuing a Bachelor of Science
+                                <br />in Software Engineering
                             </div>
                         </div>
                     </div>
@@ -40,7 +44,7 @@ function Education() {
                         </div>
                         <div className='creds'>
                             <div className='Education__school'>
-                                Department of Education, P.A Harrisburg
+                                Department of Education
                             </div>
                             <div className='Education__type'>
                                 General Education Development
@@ -48,6 +52,7 @@ function Education() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </>
 
