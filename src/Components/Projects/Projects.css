@@ -1,0 +1,144 @@
+.Project__wrapper {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+.Project__title {
+    font-size: 32px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    width:  100%;
+    margin: 0 auto;
+}
+.Project__title__text{
+    margin-bottom:64px;
+}
+.Project__card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 18px #6565651a;
+    width: 100%;
+    padding-bottom: 64px;
+    margin-bottom: 64px;
+}
+
+.Project__card__margin {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.Project__card__title {
+    font-size: 48px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+
+.Project__card__description {
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.Project__card__button {
+    /* width: 288px; */
+    width: 100%;
+    height: 40px;
+    background-color: #FF895D;
+    font-size: 16px;
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+
+.Project__card__img{
+    width: 270px;
+    height:463px;
+    margin: 0 auto;
+}
+.Project__card__img__md {
+    display: none;
+    width: 533px;
+    height: 272px;
+}
+.Project__img__container {
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1088px) {
+    .Project__card__divider {
+        width: 400px;
+    }
+    .Project__card__margin {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .Project__wrapper {
+        width: 100%;
+    }
+    .Project__card__img {
+        display: none;
+    }
+    .Project__card__img__md {
+        display: block;
+        width: 533px;
+        margin: 0 auto;
+    }
+    .Project__title {
+       display: flex;
+       justify-content: center;
+    }
+    .Project__img__container {
+        margin-top: 128px;
+    }
+    .Project__card__title {
+        margin-top: 128px;
+    }
+}
+
+@media only screen and (min-width: 678px)    and (max-width: 1087px){
+    .Project__card__margin {
+        width: 90%;
+    }
+    .Project__title {
+        width:  90%;
+        margin: 0 auto;
+    }
+    .Project__card__img {
+        display: none;
+    }
+    .Project__card__img__md {
+        display: block;
+        width: 533px;
+        margin: 0 auto;
+    }
+    .Project__card__button {
+        width: 533px;
+    }
+    .Project__card__divider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Project__card__description {
+        width: 533px;
+    }
+}
