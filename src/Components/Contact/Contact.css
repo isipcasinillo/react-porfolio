@@ -1,0 +1,157 @@
+textarea {
+  resize: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+.Contact__bg {
+    position: absolute;
+    background-color: rgb(9, 9, 34);
+    width: 100%;
+    height: 1034px;
+    bottom: 100;
+    z-index: -5;
+}
+
+.Contact__Card {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+     left: 0;
+    right: 0;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #6565651a;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.Contact__Card__Wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.Contact__Title {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.Contact__Form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.Contact__Form label {
+    font-size: 16px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.Contact__Button {
+    /* width: 288px; */
+    width: 100%;
+    height: 40px;
+    background-color: #FF895D;
+    color: white;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    border-style: none;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.Contact__Field {
+    /* width: 288px; */
+    width: auto;
+    height: 48px;
+    background-color: #FAFAFA;
+    border-style: none;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 16px 0px 16px 16px;
+}
+
+.Contact__Field::placeholder {
+    font-size: 16px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+
+}
+.Contact__Text {
+    /* width: 288px; */
+    width: auto;
+    height: 152px;
+    background-color: #FAFAFA;
+    border-style: none;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 16px 0px 16px 16px;
+}
+
+.Contact__Text::placeholder {
+    font-size: 16px;
+    color: #3E4869;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+
+}
+
+.Contact__Icon__Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Contact__icon {
+    margin-right: 16px;
+}
+
+.Contact__Icon__last {
+    margin-bottom: 88px;
+}
+
+.Contact__Icon__Container:not(:first-child) {
+    margin-top: 24px;
+}
+
+@media only screen and (min-width: 1088px) {
+    .Contact__Card {
+        width: 1088px;
+    }
+    .Contact__Card__Wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Contact__Card__Wrapper form {
+        width: 433px;
+    }
+    .Contact__Icon__MainContainer {
+        min-width: 441px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .Contact__bg {
+        height: 800px;
+    }
+}
+
+
+@media only screen and (min-width: 678px)    and (max-width: 1087px){
+
+
+}

@@ -6,6 +6,7 @@ import Information from './Components/Information/Information';
 import Education from './Components/Education/Education';
 import Technologies from './Components/Technologies/Technologies';
 import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -14,10 +15,13 @@ function App() {
       <Hero />
       <div className='wrapper'>
         <Information />
-        <Education />
-        <Technologies />
-        <Projects />
       </div>
+      <Education />
+      <Technologies />
+      <Projects />
+      <Contact />
+
+
     </>
   );
 }

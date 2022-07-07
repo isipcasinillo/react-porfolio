@@ -13,7 +13,7 @@ a {
     top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 200;
+    z-index: 1;
     background-color: #1a98f800;
     width: 100%;
 }
@@ -41,7 +41,7 @@ a {
     background-color: rgb(9, 9, 34);
     width: 80%;
     position: absolute;
-    z-index: -2;
+    z-index: 2;
     margin-top: 160px;
     top: 5%;
     left: 50%;
@@ -76,9 +76,16 @@ a {
 }
 
 @media only screen and (min-width: 1088px) {
+    .header-wrapper {
+    width: 1088px;
+    padding: 0px;
+}
     .header-container {
-        width: 1088;
-        padding: 0 44px;
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
     }
     .header__menu {
         display: none;

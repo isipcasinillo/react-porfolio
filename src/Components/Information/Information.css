@@ -66,6 +66,10 @@
 }
 
 @media only screen and (min-width: 1088px) {
+    .Information__wrapper {
+        max-width: 1088px;
+        margin: 0 auto;
+    }
     .Info__title {
     margin-left: 0;
     margin-right: 0;
