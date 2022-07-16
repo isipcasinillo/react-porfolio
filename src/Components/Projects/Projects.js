@@ -18,7 +18,7 @@ function Projects() {
 
     }
     return (
-        <Element name="proj">
+        <Element name="project">
             <div className='Project__wrapper'>
                 <div className='Project__title'>
                     <div className='Project__title__text'>

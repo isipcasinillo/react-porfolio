@@ -47,6 +47,7 @@
     border-radius: 5px;
     border: none;
     color: white;
+    font-size: 14px;
 }
 .hero__button:hover {
     cursor: pointer;
@@ -58,6 +59,9 @@
 .hero__port {
     background-color: #FF895D;
     margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

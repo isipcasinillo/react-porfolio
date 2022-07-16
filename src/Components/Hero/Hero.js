@@ -10,14 +10,11 @@ function Hero() {
                 <div className='hero__name'>Cyril Casinillo Isip</div>
                 <div className='hero__title'>Full-stack web developer</div>
                 <div className='hero__ctas'>
-                   
-                       
-                          <Link  to="project"spy={true} smooth={true} duration={250}><button className='hero__button hero__port'>PROJECT</button></Link>
-                
-                    <form action="https://github.com/isipcasinillo"  target="_blank">
+                    <Link className='hero__button hero__port' to="project" spy={true} smooth={true} offset={-30} duration={500}>PROJECT</Link>
+                    <form action="https://github.com/isipcasinillo" target="_blank">
                         <button className='hero__button hero__git'>GITHUB</button>
                     </form>
-                  
+
                 </div>
 
             </div>
