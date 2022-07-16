@@ -4,9 +4,17 @@ import HelePs from '../../Assets/Screenshot/hele_ps.png'
 import HelePsMid from '../../Assets/Screenshot/hele_ps_mid.png'
 import UlapPs from '../../Assets/Screenshot/ulap_ps.png'
 import UlapPsMid from '../../Assets/Screenshot/ulap_ps_mid.png'
+import { Element } from 'react-scroll'
 function Projects() {
+
+    const onHandleClick = (link) => {
+   
+    
+         window.open(link, "_blank")
+        
+    }
     return (
-        <>
+        <Element name="proj">
             <div className='Project__wrapper'>
                 <div className='Project__title'>
                     <div className='Project__title__text'>
@@ -23,11 +31,39 @@ function Projects() {
                                 <div className='Project__card__description'>
                                     My significant other and I were always asking one another 'when did we last fed our baby?' so, I created this application to help monitor the quantity and time between bottle feedings.
                                 </div>
-                                <button className='Project__card__button'>CASE STUDY</button>
-                            </div>
+                                <div className='Project__card__button__container'>
+                           
+                                    <button className='Project__card__button' onClick={()=> onHandleClick('https://hele-mern-app-v2.herokuapp.com/')}>VIEW LIVE</button>
+                                    <button className='Project__card__button Pj_2' onClick={()=> onHandleClick('https://github.com/isipcasinillo/hele')}>VIEW CODE</button>
+                          
+                                  
+                                </div>
+                             
+                            </div >
                             <div className='Project__img__container'>
                                 <img className='Project__card__img' src={HelePs} alt='hele screenshot' />
                                 <img className='Project__card__img__md' src={HelePsMid} alt='hele screenshot mid' />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className='Project__card'>
+                        <div className='Project__card__margin'>
+                            <div className='Project__card__divider'>
+                                <div className='Project__card__title'>
+                                   SWIPE REACT
+                                </div>
+                                <div className='Project__card__description'>
+                                  A Kanban app for job applications. This helped me during my job application process for both web development and technician role.
+                                </div>
+                                <div className='Project__card__button__container'>
+                                <button className='Project__card__button' onClick={()=> onHandleClick('https://swipe-react.herokuapp.com/')}>VIEW LIVE</button>
+                                    <button className='Project__card__button Pj_2' onClick={()=> onHandleClick('https://github.com/isipcasinillo/Swipe-react')}>VIEW CODE</button>
+                                </div>
+                            </div>
+                            <div className='Project__img__container'>
+                                <img className='Project__card__img' src={UlapPs} alt='ulap screenshot' />
+                                <img className='Project__card__img__md' src={UlapPsMid} alt='ulap screenshot mid' />
                             </div>
 
                         </div>
@@ -41,7 +77,10 @@ function Projects() {
                                 <div className='Project__card__description'>
                                     My first ever assignment during my coding bootcamp was a weather app. I refined my previous assignment to cache fresh data to lower server requests and used the react framework for a quicker UI experience.
                                 </div>
-                                <button className='Project__card__button'>CASE STUDY</button>
+                                <div className='Project__card__button__container'>
+                                <button className='Project__card__button' onClick={()=> onHandleClick('https://weather-ulap.herokuapp.com/')}>VIEW LIVE</button>
+                                    <button className='Project__card__button Pj_2' onClick={()=> onHandleClick('https://github.com/isipcasinillo/ulap')}>VIEW CODE</button>
+                                </div>
                             </div>
                             <div className='Project__img__container'>
                                 <img className='Project__card__img' src={UlapPs} alt='ulap screenshot' />
@@ -50,9 +89,31 @@ function Projects() {
 
                         </div>
                     </div>
+                    <div className='Project__card'>
+                        <div className='Project__card__margin'>
+                            <div className='Project__card__divider'>
+                                <div className='Project__card__title'>
+                                   COLOR-FONT-APP
+                                </div>
+                                <div className='Project__card__description'>
+                                   Help create color pallets for web developers. I use this to create template combinations for my projects.
+                                </div>
+                                <div className='Project__card__button__container'>
+                                <button className='Project__card__button' onClick={()=> onHandleClick('https://color-font-app.herokuapp.com/')}>VIEW LIVE</button>
+                                    <button className='Project__card__button Pj_2' onClick={()=> onHandleClick('https://github.com/isipcasinillo/color-font-app')}>VIEW CODE</button>
+                                </div>
+                            </div>
+                            <div className='Project__img__container'>
+                                <img className='Project__card__img' src={UlapPs} alt='ulap screenshot' />
+                                <img className='Project__card__img__md' src={UlapPsMid} alt='ulap screenshot mid' />
+                            </div>
+
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-        </>
+        </Element>
     )
 }
 

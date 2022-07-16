@@ -1,8 +1,9 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import '../Education/Education.css'
 function Education() {
     return (
-        <>
+        <Element name="skills">
             <div className='Education__wrapper'>
                 <div className='bg'>
 
@@ -54,7 +55,7 @@ function Education() {
                 </div>
 
             </div>
-        </>
+        </Element>
 
     )
 }

@@ -65,9 +65,19 @@
     border-style: none;
     border-radius: 5px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
-
+.Project__card__button__container{
+    display: flex;
+}
+.Pj_2 {
+    margin-left: 8px;
+    background-color: white;
+    color:#FF895D;
+    border-style: solid;
+    border-color: #FF895D;
+}
 .Project__card__img{
     width: 270px;
     height:463px;
@@ -81,6 +91,7 @@
 .Project__img__container {
     margin: 0 auto;
 }
+
 @media only screen and (min-width: 1088px) {
     .Project__card__divider {
         width: 400px;
@@ -140,5 +151,8 @@
     }
     .Project__card__description {
         width: 533px;
+    }
+    .Project__card__button__container {
+        width: 100%;
     }
 }

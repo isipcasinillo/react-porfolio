@@ -48,6 +48,9 @@
     border: none;
     color: white;
 }
+.hero__button:hover {
+    cursor: pointer;
+}
 .hero__git {
     background-color: #3E4869;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { BiMenu, BiX } from 'react-icons/bi'
+import { Link } from 'react-scroll'
 function Header() {
     const [menuState, setMenuState] = useState(false)
 
@@ -11,7 +12,8 @@ function Header() {
         <div className='header-wrapper'>
             <div className='header-container'>
                 <div className='header__logo'>
-                    <a href="#HOME" onClick={() => setMenuState(false)}>ISIP</a>
+                <Link to="about" offset={-2000}spy={true} smooth={true} duration={500}onClick={() => setMenuState(false)}>ISIP</Link>
+                    
                 </div>
                 <button className='header__menu' onClick={() => toggleState()}>
                     {
@@ -20,24 +22,24 @@ function Header() {
                 </button>
                 <ul className='header__ul'>
                     <li className='header__ul__li_1'>
-                        <a href="#ABOUT">ABOUT</a></li>
+                        <Link to="about" spy={true} smooth={true} duration={500}>ABOUT</Link></li>
                     <li>
-                        <a href="#SKILLS">SKILLS</a></li>
+                    <Link to="skills" spy={true} smooth={true} duration={500}>SKILLS</Link></li>
                     <li>
-                        <a href="#PROJECT">PROJECT</a></li>
+                    <Link to="project" spy={true} smooth={true} offset={-30}duration={500}>PROJECTS</Link></li>
                     <li>
-                        <a href="#CONTACT">CONTACT</a></li>
+                    <Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
                 </ul>
             </div>
             <ul className={`header__ul_menu ${menuState ? '' : 'close'}`} onClick={() => toggleState()}>
                 <li>
-                    <a href="#ABOUT">ABOUT</a></li>
+                <Link to="about" spy={true} smooth={true} duration={500}>ABOUT</Link></li>
                 <li>
-                    <a href="#SKILLS">SKILLS</a></li>
+                <Link to="skills" spy={true} smooth={true} duration={500}>SKILLS</Link></li>
                 <li>
-                    <a href="#PROJECT">PROJECT</a></li>
+                <Link to="project" spy={true} smooth={true} offset={-30}duration={500}>PROJECTS</Link></li>
                 <li>
-                    <a href="#CONTACT">CONTACT</a></li>
+                <Link to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link></li>
             </ul>
         </div>
     )

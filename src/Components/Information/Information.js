@@ -1,8 +1,9 @@
 import React from 'react'
+import { Element, Link } from 'react-scroll';
 import '../Information/Information.css'
 function Information() {
     return (
-        <>
+        <Element name="about">
             <div className='Information__wrapper'>
                 <div className='Info__container'>
                     <div className='Info__title'>Information & Experience</div>
@@ -30,7 +31,8 @@ function Information() {
                             Full Stack developer focused on front-end development. Recently earned my full-stack certification from Southern Methodist University. After the bootcamp, I have applied  my knowledge in Object oriented programming, Database patterns, Software architectural patterns, and API consumptions to build projects that help me solve everyday problems. Excited to add value by working with my future colleagues.
                         </div>
                         <button className='Info__contact'>
-                            Contact me
+                            <Link to="contact" spy={true} smooth={true} duration={500}>Contact me</Link>
+                          
                         </button>
                     </div>
 
@@ -38,7 +40,7 @@ function Information() {
                 </div>
 
             </div>
-        </>
+        </Element>
     )
 }
 

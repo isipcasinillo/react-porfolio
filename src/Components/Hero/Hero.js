@@ -1,16 +1,23 @@
 import React from 'react'
 import ParticlesBg from "particles-bg";
 import './Hero.css'
+import { Element, Link } from 'react-scroll';
 function Hero() {
 
     return (
-        <>
-            <div className='hero__content' id="#ABOUT">
+        <Element name="about">
+            <div className='hero__content ' name="test1" id="#ABOUT">
                 <div className='hero__name'>Cyril Casinillo Isip</div>
                 <div className='hero__title'>Full-stack web developer</div>
                 <div className='hero__ctas'>
-                    <button className='hero__button hero__port'>PORTFOLIO</button>
-                    <button className='hero__button hero__git'>GITHUB</button>
+                   
+                       
+                          <Link  to="project"spy={true} smooth={true} duration={250}><button className='hero__button hero__port'>PROJECT</button></Link>
+                
+                    <form action="https://github.com/isipcasinillo"  target="_blank">
+                        <button className='hero__button hero__git'>GITHUB</button>
+                    </form>
+                  
                 </div>
 
             </div>
@@ -19,7 +26,7 @@ function Hero() {
 
             </div>
 
-        </>
+        </Element>
 
 
     )

@@ -3,6 +3,7 @@ import ParticlesBg from "particles-bg";
 import emailjs from '@emailjs/browser';
 import { BsLinkedin, BsCheckSquareFill, BsGithub } from 'react-icons/bs'
 import '../../Components/Contact/Contact.css'
+import { Element } from 'react-scroll';
 function Contact() {
     const [nameState, setNameState] = useState('')
     const [emailState, setEmailState] = useState('')
@@ -33,7 +34,7 @@ function Contact() {
         setMessageState(value)
     }
     return (
-        <>
+        <Element name="contact">
             <div>
 
                 <div className='Contact__Card'>
@@ -85,7 +86,7 @@ function Contact() {
             <div className='Contact__bg'>
                 <ParticlesBg type="cobweb" num={100} color="#FFFFFF" />
             </div>
-        </>
+        </Element>
     );
 };
 
