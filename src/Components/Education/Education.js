@@ -14,11 +14,11 @@ function Education() {
                     </div>
                     <div className='container'>
                         <div className='dates'>
-                            2021-2024
+                            2023-2024
                         </div>
                         <div className='creds'>
                             <div className='Education__school'>
-                                Unversity of Texas at Arlington
+                                Western Governors University
                             </div>
                             <div className='Education__type'>
                                 Pursuing a Bachelor of Science
